@@ -1,0 +1,235 @@
+\documentclass[a4paper]{article}
+\usepackage{fullpage}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{textcomp}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage[left=1cm, right=0.5cm, top=1.2cm]{geometry}
+\usepackage{longtable}
+\textheight=15in
+\pagestyle{empty}
+\raggedright
+
+\def\bull{\vrule height 0.8ex width .7ex depth -.1ex }
+
+% DEFINITIONS FOR RESUME %%%%%%%%%%%%%%%%%%%%%%%
+\newcommand{\area}[2]{
+    \vspace*{-9pt}
+    \begin{verse}
+        \textbf{#1}   #2
+    \end{verse}
+}
+
+\newcommand{\lineunder}{
+    \vspace*{-8pt} \\
+    \hspace*{-18pt}\hrulefill \\
+}
+
+\newcommand{\header}[1]{
+    {\hspace*{-18pt}\vspace*{6pt}\textbf{\textsc{#1}}}
+    \vspace*{-6pt} \lineunder
+}
+
+\newcommand{\employer}[3]{
+    { \textbf{#1} (#2)\\ \underline{\textbf{\emph{#3}}}\\  }
+}
+
+\newcommand{\contact}[3]{
+    \vspace*{-10pt}
+    \begin{center}
+        {\Huge \scshape {#1}}\\
+        #2 \\ #3
+    \end{center}
+    \vspace*{-8pt}
+}
+
+\newenvironment{achievements}{
+    \begin{list}
+        {$\bullet$}{\topsep 0pt \itemsep -2pt}}{\vspace*{4pt}
+    \end{list}
+}
+
+\newcommand{\schoolwithcourses}[4]{
+    \textbf{#1} #2 $\bullet$ #3\\
+    #4 \\
+    \vspace*{5pt}
+}
+
+\newcommand{\school}[4]{
+    \textbf{#1} #2 $\bullet$ #3\\
+    #4 \\
+}
+% END RESUME DEFINITIONS %%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+\vspace*{-40pt}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     Profile
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\vspace*{-2pt}
+\begin{center}
+    {\Huge \scshape {Mohamed Umar K}}\\
+    \vspace*{2pt}
+    \href{mailto:mohamedumark2005@gmail.com}{mohamedumark2005@gmail.com} \textbar\ \href{tel:+91-9787137057}{+91-9787137057}\\
+    \vspace*{2pt}
+    \textbf{\href{https://github.com/mhadarzumar2005}{Git: mhadarzumar2005}} \textbar\ 
+    \textbf{\href{https://leetcode.com/u/mhd_arz_umark/}{LeetCode: mhd\_arz\_umark}} \textbar\ 
+    \textbf{\href{https://www.linkedin.com/in/mohamed-umar-k-937b5725b/}{LinkedIn: mohamed-umar-k-937b5725b}}
+\end{center}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     Education
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\header{Education}
+\vspace{0.2mm}
+\textbf{Chennai Institute of Technology}\hfill Chennai, Tamil Nadu\\
+BE Computer Science and Engineering \hfill Nov 2022 -- May 2026\\
+\textbf{CGPA:} 8.61\\[2pt]
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     Professional Summary
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\header{Professional Summary}
+\vspace{0.2mm}
+Innovative and results-driven Software Engineer with robust experience in full-stack development, machine learning, and competitive programming. Adept at designing scalable, high-performance applications and streamlining processes through automation and data-driven insights.
+\vspace{0.2mm}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     Professional Experience
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\header{Professional Experience}
+\vspace{0mm}
+
+\textbf{Hari Media Solutions} \textbar\ \textbf{Software Developer Intern} \hfill Chennai, India \hfill May 2024 -- Jul 2024\\[-2pt]
+\begin{itemize}[itemsep=-3pt, topsep=0pt]
+    \item Spearheaded development of a user-centric landing page incorporating SEO best practices, resulting in a 30\% boost in organic traffic.
+    \item Optimized website performance by reducing page load times by \textbf{40\%}, significantly improving user retention and conversion rates.
+    \item Integrated dynamic banners and intuitive contact forms to enhance service promotion and customer engagement.
+    \item Collaborated with cross-functional teams to refine features based on user feedback, accelerating iteration cycles.
+\end{itemize}\vspace{0.5mm}
+
+\textbf{CodersCave} \textbar\ \textbf{Web Developer (Data Science Focus) Intern} \hfill Chennai, India \hfill Nov 2023 -- Dec 2024\\[-2pt]
+\begin{itemize}[itemsep=-3pt, topsep=0pt]
+    \item Developed and optimized machine learning models, reducing training time by \textbf{30\%} while improving prediction accuracy.
+    \item Executed time series forecasting on large datasets using Google Colab and Kaggle, generating actionable insights.
+    \item Constructed interactive data dashboards with Matplotlib, Seaborn, and Plotly, enabling stakeholders to identify key quality issues.
+\end{itemize}\vspace{-2mm}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     Projects / Open-Source
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\header{Projects / Open-Source}
+\vspace{0.2mm}
+
+{\textbf{Quiz Full Stack Development}} \textbar\ \href{https://github.com/mhadarzumar2005/Quiz-App}{GitHub Link} \hfill \textit{Spring Boot, React, PostgreSQL, Maven}\\[-5pt]
+\begin{itemize}[itemsep=-4pt, topsep=0pt]
+    \item Developed a dynamic quiz platform supporting real-time participation, adaptive scoring, and personalized feedback.
+    \item Engineered a scalable backend using PostgreSQL to manage high volumes of concurrent users.
+    \item Crafted a responsive React interface featuring a live leaderboard to drive user engagement.
+\end{itemize}
+
+{\textbf{Movie-Buzz (Netflix Clone)}} \textbar\ \href{https://github.com/mhadarzumar2005/Movie-Buzz}{GitHub Link} \hfill \textit{Spring Boot, React, MongoDB, Maven}\\[-5pt]
+\begin{itemize}[itemsep=-4pt, topsep=0pt]
+    \item Developed RESTful APIs with Spring Boot to serve movie data and user watchlists, achieving average response times under 200ms.
+    \item Implemented secure user authentication and optimized data retrieval for a seamless streaming experience.
+\end{itemize}
+
+\textbf{Franchise Management Application} \textbar\ \href{https://github.com/mhdarzumar/franchise-nexus-bloom}{GitHub Link} \hfill \textit{Spring Boot, React, MongoDB, Maven}\\[-5pt]
+\begin{itemize}[itemsep=-4pt, topsep=0pt]
+    \item Developed a full-stack web application to manage franchise operations such as registration and performance reporting.
+    \item Built an interactive and responsive React frontend connected to a Spring Boot REST API backend with MongoDB for flexible and scalable data storage.
+\end{itemize}
+
+{\textbf{WebCam Painter}} \textbar\ \href{https://github.com/mhadarzumar2005/WebCam-Painter}{GitHub Link} \hfill \textit{Python, OpenCV}\\[-5pt]
+\begin{itemize}[itemsep=-4pt, topsep=0pt]
+    \item Designed an innovative, real-time painting application using a webcam, enabling users to create digital art seamlessly.
+    \item Leveraged OpenCV for efficient image processing and interactive user experience.
+\end{itemize}
+\vspace{-2mm}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     Skills
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\header{Skills}\\[-5pt]
+\begin{center}
+\begin{tabular}{@{}p{0.32\textwidth}p{0.62\textwidth}@{}}
+\textbf{Programming Languages:} & Java, Python, C, JavaScript, Solidity \\[0pt]
+\textbf{Frameworks/Tools:}      & Spring Boot, React.js, Next.js, Tailwind CSS, Docker \\[0pt]
+\textbf{Database Systems:}      & MySQL, PostgreSQL, MongoDB \\[0pt]
+\textbf{Cloud Platforms:}       & Microsoft Azure, AWS \\[0pt]
+\textbf{Data Science:}          & OpenCV, Matplotlib, Seaborn, Plotly \\
+\end{tabular}
+\end{center}
+\vspace{-10pt} % Remove extra space after skills table
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     Certifications
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\header{Certifications}\\[-5pt]
+\begin{itemize}[itemsep=-4pt, topsep=0pt]
+    \item \textbf{Zscaler Cybersecurity Associate} \hfill (Zscaler)
+    \item \textbf{Google Android Developer Certificate} \hfill (Google)
+    \item \textbf{Cisco Cyber Security Essential Certificate} \hfill (Cisco)
+    \item \textbf{CCNA Certificate} \hfill (Cisco)
+    \item \textbf NPTEL Introduction to Large Language Models (LLMs) \hfill (AWS, Coursera, Google Cloud)
+\end{itemize}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     Competitive Programming
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\header{Competitive Programming}
+\vspace{0.2mm}
+\begin{itemize}[itemsep=-2pt, topsep=0pt]
+    \item Achieved a 2-star rating on CodeChef (Div2), underscoring robust problem-solving abilities.
+    \item Solved over 800 LeetCode problems, demonstrating advanced algorithmic proficiency.
+\end{itemize}
+\vspace{1mm}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     Achievements
+%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     Volunteering
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\header{Volunteering}\\[-2pt]
+\vspace{0.2mm}
+{\textbf{ICT Academy Youth Talk}} \textbar\ \href{https://youth.ictacademy.in/}{Link} \hfill \textit{ICT Academy}\\[-5pt]
+\begin{itemize}[itemsep=-2pt, topsep=0pt]
+    \item Ensured seamless event operations.
+\end{itemize}
+{\textbf{HACKERZ SYMPOSIUM}} \textbar\ \href{https://youth.ictacademy.in/}{Link} \hfill \textit{ICT Academy}\\[-5pt]
+\begin{itemize}[itemsep=-2pt, topsep=0pt]
+    \item Coordinated logistics and scheduling for 300+ participants.
+\end{itemize}
+
+
+\end{document}
